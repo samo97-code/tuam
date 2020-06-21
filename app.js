@@ -21,11 +21,15 @@ app.use(cookieParser());
 
 const PORT = process.env.PORT || 8080; // Step 1
 
+mongoose.Promise = global.Promise
+
+
 // Step 2
 // mongoose.connect(process.env.MONGODB_URI || 'mongodb://root:1997samo1997@ds041758.mlab.com:41758/heroku_v3jqkpj6', {
 mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://samo97:1997samo1997@cluster0-tdjrq.mongodb.net/tuam?retryWrites=true&w=majority', {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  useFindAndModify: false
 });
 mongoose.connection.on('connected', () => {
   console.log('Mongoose is connected!!!!');
@@ -44,9 +48,9 @@ app.use('/user', usersRouter);
 
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
+// app.use(function(req, res, next) {
+//   next(createError(404));
+// });
 
 
 // if(process.env.NODE_ENV === 'production') {

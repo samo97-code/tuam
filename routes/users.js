@@ -7,8 +7,8 @@ const bodyParser = require('body-parser');
 /* GET users listing. */
 router.get('/user', function(req, res, next) {
   User.find().then(users=>{
-      console.log(users,'11111')
-       res.json(users)
+      console.log(users,'2222')
+       res.send({success:true,users})
   })
 });
 
