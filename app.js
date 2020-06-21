@@ -22,7 +22,7 @@ app.use(cookieParser());
 const PORT = process.env.PORT || 8080; // Step 1
 
 // Step 2
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://root:1997samo1997@ds119258.mlab.com:19258/heroku_15zh6m0g', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://root:1997samo1997@ds041758.mlab.com:41758/heroku_v3jqkpj6', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
