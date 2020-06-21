@@ -13,15 +13,16 @@ class App extends React.Component{
     };
 
     componentDidMount() {
-
+        axios.get('/').then((users)=>{
+            console.log(users,'3333')
+        }).catch((error)=>{
+            console.log(error,'3333')
+        })
     }
 
 
 
     render() {
-
-
-
         return (
             <div className="App">
                 <header className="App-header">

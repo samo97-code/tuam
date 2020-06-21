@@ -5,15 +5,13 @@ const bodyParser = require('body-parser');
 
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/user', function(req, res, next) {
   User.find().then(users=>{
+      console.log(users,'11111')
        res.json(users)
   })
 });
 
-router.post('/', function(req, res, next) {
-    User.create({name:req.body.name})
-});
 
 
 module.exports = router;
