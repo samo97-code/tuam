@@ -25,7 +25,6 @@ mongoose.Promise = global.Promise
 
 
 // Step 2
-// mongoose.connect(process.env.MONGODB_URI || 'mongodb://root:1997samo1997@ds041758.mlab.com:41758/heroku_v3jqkpj6', {
 mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://samo97:1997samo1997@cluster0-tdjrq.mongodb.net/tuam?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -47,10 +46,16 @@ app.use('/', indexRouter);
 app.use('/user', usersRouter);
 
 
-// catch 404 and forward to error handler
-// app.use(function(req, res, next) {
-//   next(createError(404));
-// });
+// error handler middleware
+app.use((error,req,res,next)=>{
+  res.status(error.status || 500);
+  res.send({
+    error: {
+      status: error.status || 500,
+      message: error.message || 'Internal Server Error',
+    },
+  })
+});
 
 
 // if(process.env.NODE_ENV === 'production') {

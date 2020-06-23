@@ -1,53 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import axios from "axios";
+import React, {Suspense,useEffect, useState} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from "./components/Header/Header"
+import SliderBanner from "./components/Main/Slider/Slider";
+import HomePageLoading from "./components/HomePageLoading/HomePageLoading";
 
+const App = () => {
 
+    const [isDataLoading, setDataLoading] = useState(true)
 
-class App extends React.Component{
+    useEffect(() => {
+        setTimeout(() => {
+            setDataLoading(false)
+        }, 1000)
+    }, [])
 
-    state = {
-        input:'Send',
-        showInput:[]
-    };
+    return (
+        <>
+            {/*{*/}
+            {/*    // isDataLoading*/}
+                {/*//     ? <HomePageLoading/>*/}
+                     <div className="App">
+                        <Header/>
+                        <SliderBanner/>
+                    </div>
+            {/*// }*/}
+        </>
 
-    componentDidMount() {
-        axios.get('/qwe').then((users)=>{
-            console.log(users.data,'4444')
-        }).catch((error)=>{
-            console.log(error,'3333')
-        })
-    }
-
-    test = ()=>{
-        let name = this.input
-        axios.post('/add',{name:name}).then((res)=>{
-            this.state.showInput = [...this.state.showInput,res.data.username]
-        }).catch((er)=>{
-            console.log(er,'777')
-        })
-    }
-
-
-
-    render() {
-        return (
-            <div className="App">
-                <header className="App-header">
-                    <h1>Start Programm</h1>
-                    <input type="text" onChange={(event)=>this.input = event.target.value}/>
-                    <button onClick={this.test}>{this.state.input}</button>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </header>
-            </div>
-        );
-    }
-}
-
-
-
+    );
+};
 
 export default App;
+
