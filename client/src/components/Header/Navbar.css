@@ -75,7 +75,20 @@
     text-align: center;
     display: inline-block;
 }
-
+.lang-block{
+    height: fit-content;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: -3px;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+.lang-block:last-child{
+    margin-right: 0;
+}
+.lang-block:hover{
+    opacity: 0.75;
+}
 @media (min-width: 992px){
     .call-us{
         margin-left: 15px;

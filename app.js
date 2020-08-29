@@ -40,10 +40,8 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 
-app.use('/', indexRouter);
-app.use('/user', usersRouter);
+app.use('/index', indexRouter);
 
 
 // error handler middleware

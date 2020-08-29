@@ -1,0 +1,15 @@
+.partner-slider{
+    margin-top: 30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #f8f8f8;
+}
+.partner-slider .image-block{
+    width: 140px!important;
+    outline: none;
+}
+.partner-slider .image-block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

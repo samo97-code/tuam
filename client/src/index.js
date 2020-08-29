@@ -1,22 +1,29 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './18next';
 import {BrowserRouter} from "react-router-dom";
-// import rootReducer from "./store/reducers/rootReducer";
-import {createStore} from "redux";
+import rootReducer from "./store/reducers/rootReducer";
+import {createStore, compose, applyMiddleware} from "redux";
 import {Provider} from "react-redux";
+import thunk from "redux-thunk";
+import HomePageLoading from "./components/HomePageLoading/HomePageLoading";
 
 
-// const store = createStore(rootReducer)
-
+const store = createStore(rootReducer,compose(
+     applyMiddleware(thunk),
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+))
 const app =
-    // <Provider store={store}>
+    <Provider store={store}>
         <BrowserRouter>
-            <App />
+            <Suspense fallback={HomePageLoading}>
+                <App />
+            </Suspense>
         </BrowserRouter>
-    // </Provider>
+    </Provider>
 
 
 ReactDOM.render(app, document.getElementById('root'));
