@@ -19,9 +19,6 @@ const Slider = () => {
         setShow(true)
     };
 
-    const buttonHandler = ()=>{
-        console.log('11111')
-    }
 
     const banners = sliderBanners.map((item,key)=>{
         return(
@@ -29,12 +26,11 @@ const Slider = () => {
                 <div className="single-slider content-v-center"
                      style={{ backgroundImage: `url(../images/slider/${item.image}`}}>
                     <div className="container">
-                        <div className="main-banner-content"><span className="sub-title">The Best Workspace in New York</span>
-                            <h1>Professional, Creative, Flexible, Scalable Workspace</h1>
+                        <div className="main-banner-content"><span className="sub-title">The Best Houses in New York</span>
+                            <h1>Professional, Creative, Flexible, Scalable House</h1>
                             <div className="btn-box">
-                                <Button buttonHandler={buttonHandler} />
-                                <a className="optional-btn" href="" onClick={(event)=>handleShow(event)}>
-                                <img src="images/icons/play-button.png" width='21' height="21" alt="" style={{display:'inherit',marginRight:'9px'}}  /> Watch Video</a></div>
+                                <Button route='/real-estate' btnName="Order Now" />
+                                <a className="optional-btn" href="" onClick={(event)=>handleShow(event)}>Watch Video</a></div>
                         </div>
                     </div>
                 </div>
@@ -45,15 +41,16 @@ const Slider = () => {
     var settings = {
         dots: false,
         infinite: true,
-        speed: 1200,
+        arrows: false,
+        speed: 2500,
         margin: 50,
-        autoplay: true,
-        autoplaySpeed: 4000,
+        // autoplay: true,
+        // autoplaySpeed: 5000,
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
-        vertical: true,
-        verticalSwiping: true,
+        pauseOnFocus: false,
+        pauseOnHover: false,
         swipeToSlide: true
     };
 

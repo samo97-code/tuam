@@ -5,7 +5,10 @@ const Copyright = () => {
     return (
         <div className="copyright row">
             <div className="about col-lg-4">
-                <div className="img-block"><img src="/images/footer-logo.png" alt=""/></div>
+                <div className="img-block">
+                    <img src="/images/logo.png" alt="logo"/>
+                    <span className="brand-name">Luvvos</span>
+                </div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et 
                     dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra lacus vel facilisis.

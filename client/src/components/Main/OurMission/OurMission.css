@@ -2,7 +2,11 @@
     padding-bottom: 70px;
     padding-top: 70px;
 }
-.our-mission-area .image-block, .our-mission-area .image-block img{
+.our-mission-area .image-block{
+    width: 100%;
+    height: 650px;
+}
+.our-mission-area .image-block img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -11,7 +15,7 @@
     padding: 0;
 }
 .our-mission-area .content{
-    background: #524552;
+    background: #2e3854 ;
     display: block;
     width: 100%;
     height: 100%;

@@ -1,7 +1,7 @@
 .underline{
     width: 70px;
     height: 1px;
-    background: #FF5D22;
+    background: linear-gradient(to right, #0ab9e4 0, #0282a5 100%);
     text-align: center;
     margin: 0 auto;
     margin-bottom: 7px;

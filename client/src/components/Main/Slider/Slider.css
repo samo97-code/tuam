@@ -17,12 +17,13 @@
 /*    height: 100%;*/
 /*}*/
 .single-slider{
-    background-position-y: -110px;
-    height: 930px;
+    /*background-position-y: -110px;*/
+    height: 1050px;
     display: table-cell!important;
     vertical-align: middle;
     min-width: 100vw;
     text-align: center;
+    background-repeat: round;
 }
 .slick-arrow.slick-prev{
     left: 25px;
@@ -105,21 +106,6 @@
     }
 }
 
-@media (min-width: 650px) {
-    .slider-banner::before{
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 350px;
-        z-index: 1;
-        background-image: url(/images/banner-shape-5ca51c2e2736731660836aca69089c1a.png);
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
 @media (max-width: 600px) {
     .main-banner-content h1 {
         font-size: 45px;

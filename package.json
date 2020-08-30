@@ -26,6 +26,7 @@
     "morgan": "~1.9.1",
     "nodemon": "^2.0.4",
     "react-i18next": "^11.7.0",
+    "react-isotope": "^1.0.7",
     "slick-carousel": "^1.8.1"
   },
   "main": "app.js",

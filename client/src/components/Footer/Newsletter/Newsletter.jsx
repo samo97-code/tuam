@@ -1,7 +1,14 @@
 import React from 'react';
 import './Newletter.css'
+import Button from "../../main_components/Button/Button";
 
 const Newsletter = () => {
+
+    const subscribeHandler = ()=>{
+        console.log('subscribe')
+    }
+
+
     return (
             <div className="row">
                 <div className="col-md-5 subscribe">
@@ -12,11 +19,7 @@ const Newsletter = () => {
                     <div className="subscribe-form">
                         <form className="newsletter-form">
                             <input type="email" className="input-newsletter" placeholder="Enter your email" name="EMAIL" />
-                            <button type="submit">
-                                <span>Subscribe </span>
-                                <span className="hide-mobile">Now</span>
-                                <i className="fa fa-angle-right hide-mobile" aria-hidden="true"></i>
-                            </button>
+                            <Button buttonHandler={subscribeHandler} btnName="Subscribe" />
                         </form>
                     </div>
                 </div>

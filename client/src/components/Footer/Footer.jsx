@@ -19,7 +19,7 @@ const Footer = () => {
                 </ul>
                 <p className="copyright-text">
                     <i className="fa fa-copyright"></i> &nbsp;
-                    2020 Tuam. All Rights Reserved by EnvyTheme
+                    2020 Luvvos. All Rights Reserved.
                 </p>
             </div>
         </section>

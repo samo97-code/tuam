@@ -18,6 +18,32 @@ const PartnerSlider = () => {
         slidesToShow: 6,
         slidesToScroll: 1,
         adaptiveHeight: true,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 430,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+
+        ]
     };
 
     // const partnerSlider
@@ -26,7 +52,8 @@ const PartnerSlider = () => {
         <section className="partner-slider">
             <div className="container">
                 <div className="row">
-                    <h4 className="text-center w-100 mb-4">TRUSTED BY 20,000 COMPANIES</h4>
+                    <h2 className="text-center w-100 mb-4">Our Partners</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                     <Slider {...settings}>
                        <div className="image-block">
                            <img src="/images/partner-slider/partner1.png" alt=""/>
@@ -41,13 +68,16 @@ const PartnerSlider = () => {
                             <img src="/images/partner-slider/partner4.png" alt=""/>
                         </div>
                         <div className="image-block">
-                            <img src="/images/partner-slider/partner5.png" alt=""/>
+                            <img src="/images/partner-slider/partner1.png" alt=""/>
                         </div>
                         <div className="image-block">
-                            <img src="/images/partner-slider/partner6.png" alt=""/>
+                            <img src="/images/partner-slider/partner2.png" alt=""/>
                         </div>
                         <div className="image-block">
-                            <img src="/images/partner-slider/partner7.png" alt=""/>
+                            <img src="/images/partner-slider/partner3.png" alt=""/>
+                        </div>
+                        <div className="image-block">
+                            <img src="/images/partner-slider/partner4.png" alt=""/>
                         </div>
                     </Slider>
                 </div>

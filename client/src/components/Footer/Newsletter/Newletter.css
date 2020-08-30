@@ -38,11 +38,11 @@ button, input {
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
 }
-.subscribe-form form button {
+.subscribe-form .default-btn {
     position: absolute;
     right: 5px;
     top: 5px;
-    background-color: #ff5d22;
+    background: linear-gradient(to right, #0ab9e4 0, #0282a5 100%);
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -55,6 +55,10 @@ button, input {
     font-size: 16px;
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 600;
+    cursor: pointer;
+}
+.subscribe-form form button:hover{
+    background: linear-gradient(to right, #0eb0e3 0, #06577f 50%, #033e57 100%)!important;
 }
 .subscribe-form form button:hover {
     color: #ffffff;

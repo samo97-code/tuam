@@ -16,63 +16,66 @@ const Pricing = () => {
                             <div className="col-md-4">
                                 <div className="item">
                                     <div className="heading">
-                                        <h3>Coworking</h3>
+                                        <div className="img-block"><img src="/images/services/service_2.jpg" alt=""/></div>
+                                        <h3>Apartment</h3>
                                     </div>
                                     <div className="price">
-                                        <span>$</span> <span>179</span>
+                                        <span>$</span> <span>170</span>
                                     </div>
                                     <div className="button">
-                                        <Button  />
+                                        <Button route='/real-estate' btnName="Order Now" />
                                     </div>
                                     <ul className="list">
-                                        <li className="hide">24/7 Access</li>
-                                        <li className="show">Cleaning Service</li>
-                                        <li className="show">High Speed Wifi/ Internet</li>
-                                        <li className="show">Opening Hours (8:00 – 22:00)</li>
-                                        <li className="show">Utilities Included</li>
-                                        <li className="hide">Access to Kitchen Lounge</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>24/7 Access</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>Cleaning Service</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>High Speed Wifi/ Internet</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>Parking</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>Balcony</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>Access to Kitchen Lounge</li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="col-md-4">
                                 <div className="item">
                                     <div className="heading">
-                                        <h3>Coworking</h3>
+                                        <div className="img-block"><img src="/images/services/service_1.jpg" alt=""/></div>
+                                        <h3>House</h3>
                                     </div>
                                     <div className="price">
-                                        <span>$</span> <span>179</span>
+                                        <span>$</span> <span>220</span>
                                     </div>
                                     <div className="button">
-                                        <Button  />
+                                        <Button route='/real-estate' btnName="Order Now" />
                                     </div>
                                     <ul className="list">
-                                        <li className="show">24/7 Access</li>
-                                        <li className="show">Cleaning Service</li>
-                                        <li className="show">High Speed Wifi/ Internet</li>
-                                        <li className="show">Opening Hours (8:00 – 22:00)</li>
-                                        <li className="show">Utilities Included</li>
-                                        <li className="show">Access to Kitchen Lounge</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>24/7 Access</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>Garden</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>High Speed Wifi/ Internet</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>Garage</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>Utilities Included</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>Access to Kitchen Lounge</li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="col-md-4">
                                 <div className="item">
                                     <div className="heading">
-                                        <h3>Coworking</h3>
+                                        <div className="img-block"><img src="/images/services/service_3.jpg" alt=""/></div>
+                                        <h3>Villa</h3>
                                     </div>
                                     <div className="price">
-                                        <span>$</span> <span>179</span>
+                                        <span>$</span> <span>300</span>
                                     </div>
                                     <div className="button">
-                                        <Button  />
+                                        <Button route='/real-estate' btnName="Order Now" />
                                     </div>
                                     <ul className="list">
-                                        <li className="show">24/7 Access</li>
-                                        <li className="hide">Cleaning Service</li>
-                                        <li className="show">High Speed Wifi/ Internet</li>
-                                        <li className="show">Opening Hours (8:00 – 22:00)</li>
-                                        <li className="hide">Utilities Included</li>
-                                        <li className="show">Access to Kitchen Lounge</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>24/7 Access</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>Tennis Court</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>Cleaning Service</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>High Speed Wifi/ Internet</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>Parking</li>
+                                        <li className="show"><img src="/images/check.png" alt="check" style={{marginRight:'10px'}}/>Swimming Poll</li>
                                     </ul>
                                 </div>
                             </div>

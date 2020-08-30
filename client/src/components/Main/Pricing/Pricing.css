@@ -18,10 +18,11 @@
     margin-bottom: 30px;
     background-color: #ffffff;
     -webkit-box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
-    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+    /*box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);*/
     border-radius: 5px;
     text-align: center;
     padding-bottom: 40px;
+    box-shadow: 0 0 14px -3px rgba(0,0,0,0.3);
 
 }
 .pricing-area .pricing-block .heading{
@@ -30,23 +31,23 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    /*padding-top: 90px;*/
+    /*padding-bottom: 90px;*/
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.pricing-area .pricing-block .heading::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 105px;
+.pricing-area .pricing-block .heading .img-block{
+    height: 240px;
+}
+.pricing-area .pricing-block .heading img{
     width: 100%;
-    background-image: url("/images/half-circle.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100%;
+    transition: 0.5s;
+}
+.pricing-area .pricing-block .heading img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 .pricing-area .pricing-block .heading h3{
     margin-bottom: 0;
@@ -55,6 +56,8 @@
     z-index: 1;
     font-weight: 600;
     font-size: 24px;
+    padding: 16px;
+    background: linear-gradient(to right, #0eb0e3 0, #06577f 50%, #033e57 100%);
 }
 .pricing-area .pricing-block .price span:first-child{
     font-size: 30px;

@@ -8,8 +8,7 @@ const AboutArea = () => {
                 <div className="row">
                     <div className="col col-md-6 col-xs-12">
                         <div className="about-title">
-                            <p>About Us</p>
-                            <h2>We offer creative working environments that suit your business</h2>
+                            <h2>We offer comfortable houses, apartments for your sweet life</h2>
                         </div>
                     </div>
                     <div className="col col-md-6 col-xs-12">

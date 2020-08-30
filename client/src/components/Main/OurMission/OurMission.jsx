@@ -23,13 +23,13 @@ const OurMission = () => {
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
                                 </p>
                             </div>
-                            <Button />
+                            <Button route='/about' btnName="Learn More" />
 
                         </div>
                     </div>
                     <div className="col-lg-5 col-md-12">
                         <div className="image-block">
-                            <img src="/images/why-choose-img.jpg" alt="Our Mission" />
+                            <img src="/images/history.jpg" alt="Our Mission" />
                         </div>
                     </div>
                 </div>

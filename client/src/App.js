@@ -12,7 +12,7 @@ import {fetchServiceSlider} from "./store/actions/service-slider/ServiceSliderAc
 import Header from "./components/Header/Header"
 import SliderBanner from "./components/Main/Slider/Slider";
 import HomePageLoading from "./components/HomePageLoading/HomePageLoading";
-import Services from "./components/Main/Services/Services";
+// import Services from "./components/Main/Services/Services";
 import AboutArea from "./components/Main/AboutArea/AboutArea";
 import ServiceSlider from "./components/Main/ServiceSlider/ServiceSlider";
 import PartnerSlider from "./components/Main/PartnerSlider/PartnerSlider";
@@ -23,18 +23,19 @@ import Team from "./components/Main/Team/Team";
 import PlaceArea from "./components/Main/PlaceArea/PlaceArea";
 import News from "./components/Main/News/News";
 import Footer from "./components/Footer/Footer";
+import MasonaryTab from "./components/Main/MasonaryTab/MasonaryTab";
 
 
 const App = () => {
     const dispatch = useDispatch()
     const services = useSelector(state => state.service.services)
     const sliderBanners = useSelector(state => state.sliderBanners.sliderBanners)
-    const serviceSliders = useSelector(state => state.serviceSliders.serviceSliders)
+    // const serviceSliders = useSelector(state => state.serviceSliders.serviceSliders)
 
     useEffect(()=>{
         dispatch(fetchService())
         dispatch(fetchSliderBanner())
-        dispatch(fetchServiceSlider())
+        // dispatch(fetchServiceSlider())
 
         // var value = 500
         // var sum = 0
@@ -65,13 +66,14 @@ const App = () => {
     return (
         <>
             {
-                !services.length && !sliderBanners.length && !serviceSliders.length
+                !services.length && !sliderBanners.length
                     ? <HomePageLoading/>
                     : <div className="App">
                         <Header/>
                         <SliderBanner/>
-                        <Services />
+                        {/*<Services />*/}
                         <AboutArea />
+                        <MasonaryTab />
                         <ServiceSlider />
                         <PartnerSlider />
                         <WhyChooseUs />

@@ -46,24 +46,14 @@ const Header = () => {
                 <div className="row">
                     <Navbar  expand="lg" className="w-100">
                         <Navbar.Brand href="#home">
-                            <img src="/images/thumbnail.png" alt="" loading='lazy'/>
+                            <img src="/images/logo.png" alt="logo" loading='lazy'/>
+                            <span className="brand-name">Luvvos</span>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="my-2 my-lg-0">
                                 <Menu menu={menu}/>
                                 <Language changeLanguageHandler={changeLanguageHandler}/>
-                                <Nav className="call-us">
-                                    <div>
-                                        <p className="image">
-                                            <span><img src="../images/icons/call.png" alt=""/></span>
-                                        </p>
-                                        <p className="number">
-                                            <span>Call Us:</span>
-                                            <span>+1 518 285679</span>
-                                        </p>
-                                    </div>
-                                </Nav>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>

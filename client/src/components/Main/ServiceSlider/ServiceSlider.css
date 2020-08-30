@@ -1,6 +1,3 @@
-.services-area{
-    padding-bottom: 70px;
-}
 .single-services-box {
     width: 92%!important;
     position: relative;
@@ -11,8 +8,8 @@
     border: 1px solid #e9e9e9;
     padding: 30px;
     outline: none;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear;
 }
 .box-shape{
     position: absolute;
@@ -40,11 +37,11 @@
     margin-bottom: 15px;
     position: relative;
     padding-bottom: 13px;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
     font-size: 24px;
     font-weight: 600;
-    margin-top: 35px
+    margin-top: 35px;
+    -webkit-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear;
 }
 .single-services-box h3::before {
     content: '';
@@ -56,8 +53,8 @@
     background-color: #e9e9e9;
     height: 2px;
     width: 60px;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear;
 }
 .single-services-box h3 a {
     display: inline-block;

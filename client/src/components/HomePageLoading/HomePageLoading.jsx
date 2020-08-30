@@ -3,18 +3,10 @@ import './HomePageLoading.css'
 
 const HomePageLoading = () => {
     return (
-        <div className="preloader preloader-deactivate">
-            <div id="global">
-                <div id="top" className="mask">
-                    <div className="plane"></div>
-                </div>
-                <div id="middle" className="mask">
-                    <div className="plane"></div>
-                </div>
-                <div id="bottom" className="mask">
-                    <div className="plane"></div>
-                </div>
-                <p><i>LOADING...</i></p></div>
+        <div id="preloader">
+            <div className="preload-content">
+                <div id="dream-load"></div>
+            </div>
         </div>
     );
 };

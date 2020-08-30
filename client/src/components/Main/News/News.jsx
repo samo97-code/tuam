@@ -19,33 +19,33 @@ const News = () => {
                                 <img src="/images/news/news1.jpg" alt=""/>
                             </div>
                             <div className="description">
-                                <h4>Why Business Absolutely Needs a Virtual Office</h4>
+                                <h4>Open New Apartments In New York</h4>
                                 <p>Quis ipsum suspendisse ultrices. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                                <Button />
+                                <Button route='/news/1' btnName="Read More" />
                             </div>
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="item">
                             <div className="image-block">
-                                <img src="/images/news/news1.jpg" alt=""/>
+                                <img src="/images/news/news2.jpg" alt=""/>
                             </div>
                             <div className="description">
-                                <h4>Why Business Absolutely Needs a Virtual Office</h4>
+                                <h4>Buy New House In Colorado</h4>
                                 <p>Quis ipsum suspendisse ultrices. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                                <Button />
+                                <Button route='/news/2' btnName="Read More" />
                             </div>
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="item">
                             <div className="image-block">
-                                <img src="/images/news/news1.jpg" alt=""/>
+                                <img src="/images/news/news3.jpg" alt=""/>
                             </div>
                             <div className="description">
-                                <h4>Why Business Absolutely Needs a Virtual Office</h4>
+                                <h4>Rent New House With Luvvos</h4>
                                 <p>Quis ipsum suspendisse ultrices. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                                <Button />
+                                <Button route='/news/3' btnName="Read More" />
                             </div>
                         </div>
                     </div>
